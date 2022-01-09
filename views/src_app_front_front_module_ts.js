@@ -22,7 +22,7 @@ class FrontService {
     constructor(http, auth) {
         this.http = http;
         this.auth = auth;
-        this.APIURL = 'http://localhost:3030/api/user';
+        this.APIURL = 'https://narayan-corp.herokuapp.com/api/user';
         this.APISERVER = 'https://enigmatic-hamlet-45263.herokuapp.com/api/user';
         this.headers = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpHeaders().set('authorization', `${this.auth.getJwtToken()}`),

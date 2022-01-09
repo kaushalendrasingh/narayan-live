@@ -69,7 +69,7 @@ class AdminService {
     constructor(http, adminAuth) {
         this.http = http;
         this.adminAuth = adminAuth;
-        this.APIURL = 'http://localhost:3030/api/admin';
+        this.APIURL = 'https://narayan-corp.herokuapp.com/api/admin';
         this.APISERVER = 'https://enigmatic-hamlet-45263.herokuapp.com/api/admin';
         this.headers = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpHeaders().set('authorization', `${this.adminAuth.getAdminJwtToken()}`),
