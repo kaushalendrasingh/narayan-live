@@ -12,7 +12,7 @@ app.use(express.json());
 let db;
 
 MongoClient.connect(
-  config.localuri,
+  config.uri,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
